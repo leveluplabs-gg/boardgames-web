@@ -3907,3 +3907,28 @@ input, select, textarea {
 			}
 
 		}
+
+.game-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.game-carousel section {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.game-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.game-carousel::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
