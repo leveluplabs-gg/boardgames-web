@@ -3921,7 +3921,7 @@ input, select, textarea {
 .game-carousel section {
     flex: 0 0 auto;            /* prevent shrinking */
     width: 400px;              /* card width, adjust as needed */
-	max-height: 400px;
+	max-height: 800px;
     border-radius: 8px;
     background: #f8f8f8;
 	color: #111;
