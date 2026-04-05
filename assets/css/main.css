@@ -3933,7 +3933,8 @@ input, select, textarea {
 /* Images inside cards */
 .game-carousel section img {
     width: 100%;
-    height: auto;
+    height: 200px;           /* fixed height, adjust as needed */
+    object-fit: cover;       /* crop/scale nicely */
     border-radius: 4px;
     display: block;
 }
