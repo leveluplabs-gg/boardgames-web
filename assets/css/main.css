@@ -3954,7 +3954,9 @@ input, select, textarea {
 }
 
 /* Make the title a bit smaller (h2) */
-.game-carousel section h2 {
-    font-size: 1.2rem;  /* smaller than default */
-    margin-bottom: 5px;
+.game-carousel section h2,
+.game-carousel section p,
+.game-carousel section li,
+.game-carousel section a.button {
+    color: #111; /* override any template styles */
 }
