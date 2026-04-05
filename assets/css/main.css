@@ -3966,7 +3966,7 @@ input, select, textarea {
 
 /* Titles inside cards */
 .game-carousel section h2 {
-    font-size: 1.3rem;              /* readable size */
+    font-size: 1.6rem;              /* readable size */
     font-weight: 600;                /* slightly bold */
     margin: 5px 0;
     color: #111 !important;          /* override template */
@@ -3974,7 +3974,7 @@ input, select, textarea {
 
 /* Paragraph text inside cards */
 .game-carousel section p {
-    font-size: 0.9rem;              
+    font-size: 1.2rem;              
     line-height: 1.3;
     margin: 3px 0;
     word-wrap: break-word;           /* prevent overflow */
@@ -3983,7 +3983,7 @@ input, select, textarea {
 
 /* Lists inside cards */
 .game-carousel section li {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #111 !important;
 }
 
@@ -3991,7 +3991,7 @@ input, select, textarea {
 .game-carousel section a,
 .game-carousel section .button {
     color: #111 !important;
-    font-size: 0.85rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
