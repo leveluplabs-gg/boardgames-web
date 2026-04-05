@@ -4045,7 +4045,7 @@ input, select, textarea {
     width: 200px;                   /* card width */
     max-height: 400px;              /* card max height */
     border-radius: 8px;
-    background: #f8f8f8;            /* light card background */
+    background: #e0e0e0;            /* light card background */
     color: #111;                    /* dark text */
     padding: 0;                     /* handled inside .inner */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
