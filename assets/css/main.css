@@ -3908,26 +3908,43 @@ input, select, textarea {
 
 		}
 
+/* Horizontal carousel container */
 .game-carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 10px;
-    scroll-behavior: smooth;
+    display: flex;             /* horizontal layout */
+    overflow-x: auto;          /* enable horizontal scroll */
+    gap: 20px;                 /* space between cards */
+    padding: 10px 0;
+    scroll-behavior: smooth;   /* smooth scroll */
 }
 
+/* Individual game cards */
 .game-carousel section {
-    flex: 0 0 auto;
-    width: 250px;
+    flex: 0 0 auto;            /* prevent shrinking */
+    width: 250px;              /* card width, adjust as needed */
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0;                 /* reset template spacing */
 }
 
+/* Images inside cards */
+.game-carousel section img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Text inside cards */
+.game-carousel section .inner {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Optional: horizontal scrollbar style */
 .game-carousel::-webkit-scrollbar {
     height: 8px;
 }
-
 .game-carousel::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 4px;
