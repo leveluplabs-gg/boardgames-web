@@ -3920,9 +3920,12 @@ input, select, textarea {
 /* Individual game cards */
 .game-carousel section {
     flex: 0 0 auto;            /* prevent shrinking */
-    width: 250px;              /* card width, adjust as needed */
+    width: 400px;              /* card width, adjust as needed */
+	max-height: 400px;
     border-radius: 8px;
-    background: #fff;
+    background: #f8f8f8;
+	color: #111;
+	padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 0;                 /* reset template spacing */
 }
@@ -3948,4 +3951,10 @@ input, select, textarea {
 .game-carousel::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 4px;
+}
+
+/* Make the title a bit smaller (h2) */
+.game-carousel section h2 {
+    font-size: 1.2rem;  /* smaller than default */
+    margin-bottom: 5px;
 }
