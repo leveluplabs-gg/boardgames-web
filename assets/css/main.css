@@ -4025,3 +4025,113 @@ input, select, textarea {
 .game-carousel section .actions {
     margin-top: auto;               /* pushes button to bottom */
 }
+
+/* =======================
+   Mini Horizontal Carousel
+======================= */
+
+/* Container for horizontal scroll */
+.mini-game-carousel {
+    display: flex;                 /* horizontal layout */
+    overflow-x: auto;              /* enable horizontal scroll */
+    gap: 20px;                     /* spacing between cards */
+    padding: 10px 0;
+    scroll-behavior: smooth;       /* smooth scroll */
+}
+
+/* Individual game cards */
+.mini-game-carousel section {
+    flex: 0 0 auto;                /* prevent shrinking */
+    width: 200px;                   /* card width */
+    max-height: 400px;              /* card max height */
+    border-radius: 8px;
+    background: #f8f8f8;            /* light card background */
+    color: #111;                    /* dark text */
+    padding: 0;                     /* handled inside .inner */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0;                      /* reset template spacing */
+    display: flex;
+    flex-direction: column;         /* stack image + content */
+}
+
+/* Images inside cards */
+.mini-game-carousel section img {
+    width: 100%;
+    height: 200px;                  /* uniform image height */
+    object-fit: cover;              /* scale/crop nicely */
+    border-radius: 8px 8px 0 0;     /* round top corners only */
+    display: block;
+}
+
+/* Inner content of cards */
+.mini-game-carousel section .inner {
+    padding: 10px;
+    text-align: left;
+    flex: 1;                        /* fill remaining card space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* push button to bottom */
+}
+
+/* Titles inside cards */
+.mini-game-carousel section h2 {
+    font-size: 1.4rem;              /* readable size */
+    font-weight: 600;               /* slightly bold */
+    margin: 5px 0;
+    color: #111 !important;         /* force dark text */
+}
+
+/* Paragraph text inside cards */
+.mini-game-carousel section p {
+    font-size: 1.0rem;              
+    line-height: 1.3;
+    margin: 3px 0;
+    word-wrap: break-word;          /* prevent overflow */
+    color: #111 !important;
+    flex-shrink: 0;                 /* prevents collapsing when flexed */
+}
+
+/* Lists inside cards */
+.mini-game-carousel section li {
+    font-size: 1.0rem;
+    color: #111 !important;
+}
+
+/* Links / buttons inside cards */
+.mini-game-carousel section a,
+.mini-game-carousel section .button {
+    color: #111 !important;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 10px;               /* spacing from text */
+    align-self: flex-start;         /* optional: left align button */
+}
+
+/* Ensure all nested text inside cards is dark */
+.mini-game-carousel section *,
+.mini-game-carousel section b,
+.mini-game-carousel section strong {
+    color: #111 !important;
+}
+
+/* Optional: horizontal scrollbar styling */
+.mini-game-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+.mini-game-carousel::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* Wrap title + text in .content-top */
+.mini-game-carousel section .content-top {
+    flex: 1;                       /* take up remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button container stays below content-top */
+.mini-game-carousel section .actions {
+    margin-top: auto;               /* pushes button to bottom */
+}
+
