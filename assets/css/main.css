@@ -4013,3 +4013,15 @@ input, select, textarea {
     background: #888;
     border-radius: 4px;
 }
+
+/* Wrap title + text in .content-top */
+.game-carousel section .content-top {
+    flex: 1;                       /* take up remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button container stays below content-top */
+.game-carousel section .actions {
+    margin-top: auto;               /* pushes button to bottom */
+}
