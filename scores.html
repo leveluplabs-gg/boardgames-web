@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Game Log - Level Up: Tabletop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Level Up: Tabletop</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="scores.html" class="active">Game Log</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Game Log</h1>
+							<p>Keep track of what has been played, who joined in, the final scores and the all-important winner.</p>
+
+							<section>
+								<h2>Add a played game</h2>
+								<form id="game-log-form">
+									<div class="fields">
+										<div class="field third">
+											<label for="played-date">Date played</label>
+											<input type="date" name="played-date" id="played-date" required />
+										</div>
+										<div class="field third">
+											<label for="game-name">Game</label>
+											<input type="text" name="game-name" id="game-name" placeholder="Codenames" required />
+										</div>
+										<div class="field third">
+											<label for="winner-name">Winner</label>
+											<input type="text" name="winner-name" id="winner-name" placeholder="Winning player or team" required />
+										</div>
+										<div class="field half">
+											<label for="players">Players</label>
+											<input type="text" name="players" id="players" placeholder="Liam, Alex, Sam, Jess" required />
+										</div>
+										<div class="field half">
+											<label for="scores">Scores</label>
+											<input type="text" name="scores" id="scores" placeholder="Liam 42, Alex 35, Sam 28" />
+										</div>
+										<div class="field">
+											<label for="notes">Notes</label>
+											<textarea name="notes" id="notes" rows="3" placeholder="Close finish, first play, house rule used..."></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Add result" class="primary" /></li>
+										<li><input type="reset" value="Clear form" /></li>
+									</ul>
+								</form>
+							</section>
+
+							<section>
+								<h2>Played games</h2>
+								<div class="table-wrapper">
+									<table class="alt" id="game-log-table">
+										<thead>
+											<tr>
+												<th>Date</th>
+												<th>Game</th>
+												<th>Players</th>
+												<th>Winner</th>
+												<th>Scores</th>
+												<th>Notes</th>
+												<th>Remove</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="7">No games logged yet.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="actions">
+									<li><button type="button" id="export-game-log" class="button">Export log</button></li>
+									<li><button type="button" id="clear-game-log" class="button">Clear log</button></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Level Up: Tabletop. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/scores.js"></script>
+
+	</body>
+</html>
